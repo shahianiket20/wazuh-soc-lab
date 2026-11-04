@@ -63,7 +63,7 @@ Wazuh's default rules don't fire on a plain port scan (no auth failure or file e
 
 ## Full report
 
-See [`Home_SOC_Lab_Wazuh_Report.docx`](./Home_SOC_Lab_Wazuh_Report.docx) for the complete write-up, including methodology, architecture, incident reports, and lessons learned (including real troubleshooting: package install failures, duplicate VM MAC addresses, and the custom rule debugging process).
+See [`Home_SOC_Lab_Wazuh_Report.docx`](./Home_SOC_Lab_Wazuh_Report.pdf) for the complete write-up, including methodology, architecture, incident reports, and lessons learned (including real troubleshooting: package install failures, duplicate VM MAC addresses, and the custom rule debugging process).
 
 ## Author
 
