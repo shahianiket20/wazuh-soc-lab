@@ -1,0 +1,26 @@
+<!--
+  Custom Wazuh detection rule — Home SOC Lab project
+  Author: Aniket Shahi
+
+  Purpose: Attempts to detect a port-scan pattern (many connection attempts
+  from one source in a short time) using UFW firewall logs forwarded from
+  the monitored endpoint. Builds on Wazuh's built-in firewall rule (4100).
+
+  Status: The underlying firewall events were confirmed via wazuh-logtest
+  to be collected and decoded correctly, but this frequency rule did not
+  reliably fire during live testing. Kept here as-is for documentation and
+  as a starting point for further debugging / improvement.
+-->
+
+<group name="local,syscheck,">
+
+<rule id="100100" level="10" frequency="8" timeframe="10">
+  <if_matched_sid>4100</if_matched_sid>
+  <same_source_ip />
+  <description>Possible port scan detected: multiple connection attempts from the same source in a short time</description>
+  <mitre>
+    <id>T1046</id>
+  </mitre>
+</rule>
+
+</group>
