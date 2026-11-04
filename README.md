@@ -2,7 +2,6 @@
 
 A self-contained Security Operations Center (SOC) lab built on a single laptop, using **Wazuh** (open-source SIEM/XDR) to monitor a Linux endpoint while it is deliberately attacked from a separate machine. The project covers the full detection lifecycle: deploy → attack → detect → investigate → report.
 
-This is a companion project to my earlier [Cowrie Honeypot Attack Monitoring Dashboard](#) (final year project) — that project focused on *collecting* attacker data, this one focuses on *detecting and investigating* attacks on a protected system, which is the core job of a SOC analyst.
 
 ## What this project demonstrates
 
